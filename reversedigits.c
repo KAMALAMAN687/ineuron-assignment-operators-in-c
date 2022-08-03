@@ -5,10 +5,10 @@ int main()
     printf("enter a three digit number:");
     scanf("%d",&a);
     b=a%10;
-    a/=10;
-    c=a%10;
-    a/=10;
-    printf("%d%d%d",b,c,a);
+    b*=100;
+    c=a/10;
+    b=b+c;
+    printf("%d",b);
     return 0;
 
 
